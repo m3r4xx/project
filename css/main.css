@@ -17,7 +17,7 @@ img{
     max-width: 100%;
 }
 .wrapper{
-    background-color:#DDDDDD;
+    background-color:white;
     width: 100%;
 }
 .container{
@@ -106,6 +106,55 @@ border-radius: 10px;
 .hero img{
     position: absolute;
     top: 0;
-
 }
-
+/*вторая страничка*/
+.problems{
+    padding-top: 50px;
+}
+.about h3{
+    font-weight: 600;
+    font-size: 50px;
+}
+.about .see{
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transition: all 500ms;
+}
+.about .see:hover{
+    transform: scale(1.1);
+}
+.about .problems{
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.block {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+.block-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 200px; 
+}
+.term {
+    font-weight: 600;
+    font-size: 18px;
+}
+.description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+    padding-top: 3px;
+}
+.block img {
+    width: 50px;
+    height: 50px;
+}

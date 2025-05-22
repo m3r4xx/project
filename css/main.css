@@ -160,8 +160,58 @@ border-radius: 10px;
     height: 50px;
 }
 /*третья страничка*/
+.news {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.news h3 {
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.magazin {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+}
+.block {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
+}
+.block:hover {
+    transform: translateY(-5px);
+}
+.car-image {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto;
+}
+.block:hover .car-image {
+    transform: scale(1.03);
+}
+.image-caption {
+    display: block;
+    font-size: 28px;
+    font-weight: 500;
+    margin-top: 25px;
+    color: black;
+}
+/*Четвертая*/
 .banner h3{
-    font-weight: 600;
+    font-weight: 400;
     font-size: 50px;
 }
 .banner{
@@ -184,3 +234,4 @@ border-radius: 10px;
     padding-top: 500px;
     width: 400px;
 }
+

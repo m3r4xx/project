@@ -234,16 +234,14 @@ border-radius: 10px;
 }
 .partner .info{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
 }
 .partner .info .block{
     text-align: center;
-    width: 100%;
-    margin: 15px 0;
+    width: 20%;
+    margin: 30px 2%;
 }
 .partner .info .block img{
     margin-bottom: 15px;
-    max-width: 100%;
 }

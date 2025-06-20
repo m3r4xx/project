@@ -24,6 +24,20 @@
     </header>
     </div>
 <body>
+    <style>        
+    body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-image: url('/img/avtoend.svg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+    </style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,42 +51,95 @@
         }
         
         .content-block {
-            margin: 80px 0; /* Отступы сверху и снизу 80px */
+            margin: 80px 0;
             padding: 20px;
+            color: white;
         }
         
         .info-text {
             font-size: 18px;
             margin-bottom: 30px;
-            color: #333;
+            color: white;
+        }
+        
+        .services-list {
+            text-align: left;
+            max-width: 600px;
+            margin: 30px auto;
+            font-size: 16px;
+        }
+        
+        .services-list ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .services-list li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 25px;
+        }
+        
+        .services-list li:before {
+            content: "•";
+            color: white;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .service-link {
+            color: rgb(203, 203, 203);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .service-link:hover {
+            color: rgb(203, 203, 203);
+            text-decoration: underline;
         }
         
         .material-btn {
             display: inline-block;
-            background-color: #666;
+            background-color:gray;
             color: white;
             padding: 12px 25px;
             border-radius: 4px;
             text-decoration: none;
             font-size: 16px;
             transition: all 0.3s ease;
+            margin-top: 30px;
         }
         
         .material-btn:hover {
-            background-color: #555;
+            background-color: gray;
             transform: translateY(-3px);
-            box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+            box-shadow: 0 3px 8px white(0,0,0,0.2);
         }
     </style>
 </head>
 <body>
     <div class="content-block">
-        <p class="info-text">Со всеми материалами, использованными в работе, вы можете ознакомиться по кнопке ниже</p>
+        <p class="info-text">
+            Со всеми материалами, использованными в работе, 
+            <br><br>
+            вы можете ознакомиться по кнопке ниже</p>
+        
+        <div class="services-list">
+            <p>Для создания сайта были использованы такие сервисы как:</p>
+            <ul>
+                <li><a href="https://www.figma.com/community" class="service-link">Figma</a> (для создания некоторых графических элементов)</li>
+                <li><a href="https://shedevrum.ai/text-to-image/?utm_source=yandex&utm_medium=search&utm_campaign=KachaemWeb_Kartinki_%D0%A5%D0%BE%D1%80%D0%BE%D1%88%D0%B5%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F&utm_content=none&utm_term=---autotargeting&yclid=1852207015693647871&utm_referrer=https%3A%2F%2Fyandex.ru%2F&prompt=&ar=16%2F9" class="service-link">Шедеврум</a> (для генерации сопровождающих изображений)</li>
+                <li><a href="https://code.visualstudio.com/" class="service-link">Visual Studio Code</a> (для написания кода в формате css и html)</li>
+                <li><a href="https://github.com/ritwickdey/live-server-web-extension" class="service-link">Live Server</a> (Расширение для Visual Studio Code, для отслеживания результата в реальном времени)</li>
+            </ul>
+        </div>
         
         <a href="https://docs.google.com/document/d/1OViY4BVEVnhOTur5P-lIi6ycGg-8-d-o/edit?usp=sharing&ouid=106756971832581552897&rtpof=true&sd=true" 
            class="material-btn" 
            target="_blank">
-            Ознакомиться
+            Ознакомиться с материалами
         </a>
     </div>
 </body>
@@ -89,7 +156,7 @@
         </ul>
     </div>
     <div>
-        <a href="/resources.html" class="animated-button">
+        <a href="#" class="animated-button">
             <h4>Ресурсы</h4>
         </a>
     </div>

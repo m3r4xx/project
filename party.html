@@ -25,6 +25,144 @@
     </div>
 <body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Команда проекта</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .team-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .team-block {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-block:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            z-index: 1;
+        }
+        
+        .team-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #fff;
+            border-bottom: 1px solid #666;
+            padding-bottom: 8px;
+        }
+        
+        .team-members {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .team-members li {
+            margin-bottom: 8px;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Команда проекта</div>
+    
+    <div class="team-container">
+        <div class="team-block">
+            <div class="team-title">Дизайн презентаций и создание сайта</div>
+            <ul class="team-members">
+                <li>Султанова Эвелина Тимуровна 241-361</li>
+            </ul>
+        </div>
+        
+        <div class="team-block">
+            <div class="team-title">План развития проекта</div>
+            <ul class="team-members">
+                <li>Азарнов Александр Валерьевич 241-112</li>
+                <li>Беньковский Егор Кириллович 241-112</li>
+                <li>Гладков Максим Артемович 241-112</li>
+                <li>Голобурдин Никита Денисович 241-112</li>
+                <li>Емелин Александр Александрович 241-112</li>
+                <li>Каменских Михаил Сергеевич 241-112</li>
+                <li>Угнивенко Кирилл Максимович</li>
+                <li>Алистратов Роман Михайлович241-113</li>
+                <li>Житарюк Павел Дмитриевич 241-113</li>
+                <li>Николаев Даниил Андреевич 241-113</li>
+            </ul>
+        </div>
+        
+        <div class="team-block">
+            <div class="team-title">Схема производственных процессов</div>
+            <ul class="team-members">
+                <li>Бобков Павел Сергеевич 241-121</li>
+                <li>Кучумов Михаил Денисович 241-121</li>
+                <li>Сальник Дмитрий Иванович 241-121</li>
+                <li>Чухов Виталий Николаевич 241-121</li>
+                <li>Якушин Кирилл Григорьевич 241-121</li>
+            </ul>
+        </div>
+        
+        <div class="team-block">
+            <div class="team-title">Площадь и средства производства</div>
+            <ul class="team-members">
+                <li>Булахов Эрик Ролланович 241-131</li>
+                <li>Макров Сергей Михайлович 241-122</li>
+                <li>Романов Егор Александрович 241-122</li>
+                <li>Судоплатова Катерина Сергеевна 241-122</li>
+                <li>Хаертдинов Вильдан Маратович 241-122</li>
+                <li>Ходаковский Андрей Викторович 241-122</li>
+            </ul>
+        </div>
+        
+        <div class="team-block">
+            <div class="team-title">Экономические данные</div>
+            <ul class="team-members">
+                <li>Аде Максим Сергеевич 241-611</li>
+                <li>Антонова Ксения Николаевна 241-611</li>
+                <li>Пеший Денис Васильевич 241-611</li>
+                <li>Чанышева Юлия Денисовна 241-611</li>
+                <li>Попов Владислав Алексеевич 241-612</li>
+                <li>Соловьев Кирилл Владимирович 241-621</li>
+            </ul>
+        </div>
+        
+        <!-- Блок 6 -->
+        <div class="team-block">
+            <div class="team-title">Научный руководитель</div>
+            <ul class="team-members">
+                <li>Шишанов Сергей Марксович</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
 <footer>
 <div class="blocks container">
     <div>
@@ -38,7 +176,7 @@
         </ul>
     </div>
     <div>
-        <a href="#" class="animated-button">
+        <a href="/resources.html" class="animated-button">
             <h4>Ресурсы</h4>
         </a>
     </div>

@@ -24,7 +24,154 @@
     </header>
     </div>
 <body>
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Журнал разработки</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #000;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .journal-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .journal-block {
+            background-color: #333;
+            color: white;
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .journal-block:hover {
+            transform: scale(1.02);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+        
+        .block-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff;
+            border-bottom: 1px solid #666;
+            padding-bottom: 10px;
+        }
+        
+        .block-content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .large-text {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        
+        .date-label {
+            font-size: 14px;
+            color: #aaa;
+            margin-top: 20px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #555;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn:hover {
+            background-color: #666;
+        }
+        
+        .btn-resources {
+            background-color: #444;
+        }
+        
+        .btn-resources:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">Журнал разработки</div>
+    
+    <div class="journal-container">
+        <div class="journal-block">
+            <div class="block-title">Постановка целей и задач</div>
+            <div class="block-content">
+            Каждый успешный проект начинается с четкого понимания цели и продуманного плана. Четкое формулирование задачи и продуманный план – основа успеха любого проекта. Мы не просто ставим цели, а выстраиваем путь к их достижению
+            <br><br>
+                Прежде чем приступить к работе, мы ответили на ключевые вопросы:
+            <br><br>
+             Зачем нужен этот проект? (Основная миссия)
+            <br><br>
+             Какие проблемы он решает? (Потребности клиентов или бизнеса)
+            <br><br>
+            Какой результат считаем успехом? (Конкретные метрики)
+            <br><br>
+                Это помогло сформулировать четкое и измеримое техническое задание.
+            </div>
+        </div>
+        
+        <div class="journal-block">
+            <div class="block-title">Анализ полученных данных</div>
+            <div class="block-content large-text">
+            Анализ полученных данных — ключевой этап, позволяющий извлечь ценную информацию для принятия решений. Сначала мы собираем и очищаем данные, удаляя дубликаты и ошибки, чтобы обеспечить их достоверность. Затем применяем различные методы анализа: описательную статистику для выявления трендов, корреляционный анализ для поиска взаимосвязей, кластеризацию для сегментации данных. Важную роль играет визуализация — графики, диаграммы и дашборды помогают наглядно представить результаты. На основе анализа формулируем выводы: подтверждаем или опровергаем гипотезы, находим проблемные зоны и предлагаем решения.
+            </div>
+            <a href="/resources.html" class="btn btn-resources">Ресурсы</a>
+        </div>
+        
+        <div class="journal-block">
+            <div class="block-title">Фомирование проекта</div>
+            <div class="block-content">
+                Основной акцент был сделан на создание динамичной боевой системы, сочетающей элементы платформера и файтинга. Разработали систему комбо-атак, уклонений и специальных способностей, которые игрок может комбинировать в различных ситуациях.
+                <br><br>
+                Когда все этапы работы завершены, наступает время собрать всё в единый результат. Мы проверяем, соответствует ли проект первоначальным целям, анализируем выполнение задач и оцениваем качество. На этом этапе важно выявить недочёты — возможно, где-то требовалась доработка или изменились условия.
+                Ошибки — неизбежная часть процесса, но главное — вовремя их обнаружить и исправить. Мы проводим тестирование, собираем обратную связь от команды и заказчика, а затем вносим правки. Иногда это мелкие корректировки, а иногда — пересмотр части стратегии. Важно, чтобы итоговый вариант был продуманным, функциональным и полностью отвечал поставленным задачам.
+            </div>
+        </div>
+        
+        <!-- Блок 4 -->
+        <div class="journal-block">
+            <div class="block-title">Защита проекта</div>
+            <div class="block-content">
+             Успешная защита — это не просто формальность, а возможность показать профессионализм и открыть дорогу новым проектам.
+            </div>
+            <div class="date-label">Защита 14.05.2025</div>
+            <a href="https://drive.google.com/drive/folders/1M-Uw_ElrqzK0tZwBlDF9O3pzzhcYw0Yp?usp=drive_link" class="btn">Ознакомиться</a>
+            <div class="date-label">Защита 26.05.2025</div>
+            <a href="https://drive.google.com/drive/folders/1w1M30aOa02VP0q2--94rWT6F3SMrEkpi?usp=drive_link" class="btn">Ознакомиться</a>
+        </div>
+    </div>
+</body>
+</html>
 <footer>
 <div class="blocks container">
     <div>
